@@ -23,3 +23,6 @@ func main() {
 
 // transformed this into my first implementation of FizzBuzz
 // based on some of the code from the first five pages of chap.4
+
+// updated it so it fulfills the requirements for the third
+// exercise of the fourth chapter
