@@ -14,6 +14,8 @@ func main() {
 			fmt.Println("Fizz")
 		} else if i % 5 == 0 {
 			fmt.Println("Buzz")
+		} else {
+			fmt.Println(i)
 		}
 		i = i + 1
 	}
