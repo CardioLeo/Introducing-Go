@@ -16,3 +16,7 @@ func main() {
 	defer second()
 	first()
 }
+
+// further example from the book
+// f, _ := os.Open(filename)
+// defer f.Close()
