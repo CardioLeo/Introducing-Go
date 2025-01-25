@@ -7,14 +7,16 @@ import (
 func sum(inputs []int) int {
 	var newSum int = 0
 	for i := 0; i < len(inputs); i++ {
-		fmt.Println(inputs[i])
-		newSum += inputs[i]
+		newSum = newSum + inputs[i]
+		fmt.Println(newSum)
 	}
 	return newSum
 }
 
 func main() {
-	mySlice := make([]int, 3, 3)
+	// mySlice := make([]int, 3, 3)
+	var mySlice = []int{3, 6, 9}
+	fmt.Println("The numbers we will add are", mySlice)
 	mySum := sum(mySlice)
-	fmt.Println(mySum)
+	fmt.Println("The result is", mySum)
 }
