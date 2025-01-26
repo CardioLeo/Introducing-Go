@@ -19,4 +19,13 @@ func main() {
 	swap(&x, &y)
 	
 	fmt.Println("After calling swap, the value of x is:", x, "and the value of y is:", y)
+
+	a := 226
+	b := 6789
+
+	fmt.Println("Before calling swap, the value of a is:", a, "and the value of b is:", b)
+
+        swap(&a, &b)
+
+        fmt.Println("After calling swap, the value of a is:", a, "and the value of b is:", b)
 }
