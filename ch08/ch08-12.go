@@ -8,7 +8,7 @@ import (
 
 func server() {
 	// listen on a port
-	ln, err := net.Listen("tcp", ":9999")
+	ln, err := net.Listen("tcp", ":8080")
 	if err != nil {
 		fmt.Println(err)
 		return
