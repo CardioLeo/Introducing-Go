@@ -53,3 +53,6 @@ func main() {
 	var input string
 	fmt.Scanln(&input)
 }
+
+// runs into similar problems as ch08-12.go
+// "connection refused" etc
