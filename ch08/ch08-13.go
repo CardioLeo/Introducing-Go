@@ -26,6 +26,18 @@ func hello(res http.ResponseWriter, req *http.Request) {
 		</html>`,
 	)
 }
+
+/*
+http.Handle(
+	"/assets/",
+	http.StripPrefix(
+		"/assets/",
+		http.FileServer(http.Dir("assets"),)
+	),
+)
+// code from bottom of page 77
+*/
+
 func main() {
 	fmt.Println("calling http.HandleFunc()")
 	http.HandleFunc("/hello", hello)
