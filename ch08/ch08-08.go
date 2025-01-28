@@ -27,15 +27,15 @@ func (ps ByName) Swap(i, j int) {
 // next follows the second example, the ways of doing it bottom of page 72
 
 type ByAge []Person
-func (this ByAge) Len2() int {
+func (this ByAge) Len() int {
 	return len(this)
 }
 
-func (this ByAge) Less2(i, j int) bool {
+func (this ByAge) Less(i, j int) bool {
 	return this[i].Age < this[j].Age
 }
 
-func (this ByAge) Swap2(i, j int) {
+func (this ByAge) Swap(i, j int) {
 	this[i], this[j] = this[j], this[i]
 }
 
@@ -45,6 +45,8 @@ func main() {
 		{"Jack", 10},
 	}
 	sort.Sort(ByName(kids))
+	fmt.Println(kids)
+	sort.Sort(ByAge(kids))
 	fmt.Println(kids)
 
 }
